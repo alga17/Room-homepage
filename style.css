@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+}
+
+
+.top-row {
+    height: 65%;
+    display: grid;
+    grid-template-columns: 58% 42%;
+}
+
+.bottom-row {
+    height: 35%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+
+.block-1 {
+    background-image: url(images/desktop-image-hero-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    padding: 60px;
+    color: white;
+    gap: 30px;
+}
+
+.line {
+    width: 15px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+.name-span:hover .line  {
+    opacity: 1;
+}
+
+
+.logo-image {
+    height: 20px;
+    width: auto;
+    margin-right: 50px;
+}
+
+.block-1 > span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.name-span {
+    max-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.block-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.text-box > p {
+    margin-top: 2rem;
+    color: hsl(0, 0%, 63%);
+    max-width: 660px;
+    font-size: 25px;
+    line-height: 1.2em;
+}
+
+.text-box {
+    margin: 100px 140px 0 100px;
+}
+
+.shop-now {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    max-width: 350px;
+}
+
+.shop-now > span {
+    margin-top: 30px;
+    letter-spacing: 1em;
+    font-weight: 600;
+}
+
+.icon-arrow {
+    margin: 30px 0 0 30px;
+}
+
+.shop-now:hover .shop-now-text {
+    color: hsl(0, 0%, 63%);
+    transition: all 0.2s ease;
+}
+
+.shop-now:hover .icon-arrow {
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+.slider {
+    display: flex;
+    margin: auto 0 0 0;
+    width: 28.57%;
+    height: 17%;
+}
+
+
+
+.slider-forward, .slider-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.slider-forward:hover, .slider-back:hover {
+    background-color: hsl(0, 0%, 27%);
+}
+
+.angel {
+    height: 30%;
+}
+
+.block-3 {
+    background-image: url(images/image-about-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block-4 {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    padding: 80px 45px 0 45px;
+}
+
+h4 {
+    letter-spacing: 0.5em;
+}
+
+.block-4 > p {
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 63%);
+    max-width: 660px;
+    font-size: 21px;
+    line-height: 1.2em;
+}
+
+.block-5 {
+    background-image: url(images/image-about-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Мобильные стили */
+
+@media (max-width: 1440px) {
+h2 {
+    font-size: 30px;
+}
+
+.text-box > p {
+    margin-top: 2rem;
+    color: hsl(0, 0%, 63%);
+    max-width: 660px;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.block-4 {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    padding: 60px 35px 0 35px;
+}
+
+h4 {
+    letter-spacing: 0.5em;
+    font-size: 20px;
+}
+
+.block-4 > p {
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 63%);
+    max-width: 660px;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.slider {
+    height: 15%;
+}
+    
+
+}
+
+@media (max-width: 1024px) {
+h2 {
+    font-size: 30px;
+    max-width: 300px;
+}
+
+.text-box {
+    margin: 60px 40px 0 40px;
+}
+
+.text-box > p {
+    margin-top: 2rem;
+    color: hsl(0, 0%, 63%);
+    max-width: 660px;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.block-4 {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 25px 0 25px;
+}
+
+h4 {
+    letter-spacing: 0.5em;
+    font-size: 17px;
+}
+
+.block-4 > p {
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 63%);
+    max-width: 660px;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.slider {
+    height: 13%;
+}
+    
+
+}
+
+@media (max-width: 500px) {
+body {
+    width: 100%;
+}
+    .top-row {
+    display: flex;
+    flex-direction: column;
+     width: 100%
+}
+
+.bottom-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.name-span {
+    display: none;
+}
+
+.block-1 {
+    background-image: url('images/mobile-image-hero-1.jpg'); /* квадратная версия */
+    background-size: cover;
+    height: auto; 
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+}
+
+.logo-image {
+    margin: 50px auto; /* центрирование */
+    height: 15px;
+}
+
+.block-2 {
+    min-height: 300px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.block-3 {
+    min-height: 300px;
+    display: flex;
+    padding: 0;
+    gap: 0;
+}
+
+.block-4 {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 10px;
+}
+
+.block-5 {
+    min-height: 300px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.top-row, .bottom-row {
+    height: auto;      /* убираем фиксированную высоту */
+}
+
+.shop-now {
+    font-size: 15px;
+}
+
+.slider {
+    margin: auto 0 0 auto;
+    width: 35%;
+    height: 18%;
+}
+
+
+
+}
